@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jakem\\source\\repos\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jakem\\source\\repos\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jakem\\source\\repos\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI.csproj",
+        "projectName": "Jake.Azure.PowerBI",
+        "projectPath": "C:\\Users\\jakem\\source\\repos\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI.csproj",
+        "packagesPath": "C:\\Users\\jakem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jakem\\source\\repos\\Jake.Azure.PowerBI\\Jake.Azure.PowerBI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jakem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Users\\jakem\\.nuget\\packages\\icos.connect.core.service": {},
+          "C:\\Users\\jakem\\Desktop\\ICOS Con\\Icos-connect-services - EF Cosmos\\Core\\Icos.Connect.Core.CacheManager\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ICOSLIVE/_packaging/IcosConnectServiceFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.21.0, )"
+            },
+            "Microsoft.PowerBI.Api": {
+              "target": "Package",
+              "version": "[3.21.0, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.1.76, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
