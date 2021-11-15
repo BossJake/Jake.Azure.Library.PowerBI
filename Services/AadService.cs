@@ -5,6 +5,7 @@
 
 namespace Jake.Azure.PowerBI.Services
 {
+    using Jake.Azure.PowerBI.Enums;
     using Jake.Azure.PowerBI.Models;
     using Microsoft.Extensions.Options;
     using Microsoft.Identity.Client;
@@ -28,7 +29,7 @@ namespace Jake.Azure.PowerBI.Services
         public string GetAccessToken()
         {
             AuthenticationResult authenticationResult = null;
-            if (azureAd.Value.AuthenticationMode.Equals("masteruser", StringComparison.InvariantCultureIgnoreCase))
+            if (azureAd.Value.AuthenticationMode.Equals(AuthenticationMethodType.MASTERUSER.ToString(), StringComparison.InvariantCultureIgnoreCase))
             {
                 // Create a public client to authorize the app with the AAD app
                 IPublicClientApplication clientApp = PublicClientApplicationBuilder.Create(azureAd.Value.ClientId).WithAuthority(azureAd.Value.AuthorityUri).Build();
@@ -50,7 +51,7 @@ namespace Jake.Azure.PowerBI.Services
             }
 
             // Service Principal auth is the recommended by Microsoft to achieve App Owns Data Power BI embedding
-            else if (azureAd.Value.AuthenticationMode.Equals("serviceprincipal", StringComparison.InvariantCultureIgnoreCase))
+            else if (azureAd.Value.AuthenticationMode.Equals(AuthenticationMethodType.SERVICEPRINCIPAL.ToString(), StringComparison.InvariantCultureIgnoreCase))
             {
                 // For app only authentication, we need the specific tenant id in the authority url
                 var tenantSpecificUrl = azureAd.Value.AuthorityUri.Replace("organizations", azureAd.Value.TenantId);
